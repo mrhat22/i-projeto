@@ -1,0 +1,133 @@
+:root {
+    --branco-principal: white;
+    --cinza-secundario: grey;
+    --botao-azul: blue;
+    --cor-do-fundo: black;
+    --fonte-principal: 'Italianno';
+    --botao-azul-efeito: cyan;
+}
+
+body {
+    background-color: var(--cor-do-fundo);
+    color: var(--branco-principal);
+    font-size: 16px;
+    font-weight: 400px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.principal {
+    background-image: url("img/background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+}
+
+.container_botao {
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+
+.container_aviso {
+    font-size: 12px;
+    color: var(--cinza-secundario);
+    border: 0px solid;
+}
+
+.container_imagem {
+    margin: 1em 0 2em 0;
+}
+
+.container_caixa {
+    margin: 0 6em;
+}
+
+.secundario_imagem {
+    width: 80%;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin: 0.1em;
+}
+
+.descricao__texto {
+    color: var(--cinza-secundario);
+}
+
+.secundario__botao {
+    display: inline-block;
+    margin-top: lem;
+}
+
+.container__descricao {
+    padding: 2em;
+}
+
+.dispositivo__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivo__titulo {
+    font-size: 48px;
+    color: var(--branco-principal);
+}
+
+.lista__item {
+    font-size: 32px;
+    color: var(--branco-principal);
+}
+
+.rodape {
+    text-align: center;
+    margin: o 3em;
+}
+
+.rodape__logo {
+    margin-bottom: 2em;
+}
+
+.lista__link a:hover {
+    color: var(--botao-azul);
+}
+
+.lista__link a:active {
+    color: purple;
+}
+
+.container__botao:hover {
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-do-fundo);
+}
